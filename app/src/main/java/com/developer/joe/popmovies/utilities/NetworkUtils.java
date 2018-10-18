@@ -20,6 +20,7 @@ public class NetworkUtils {
     private static final String THE_MOVIES_DB_BASE_URL = "https://api.themoviedb.org/3/";
     private static final String TYPE_PATH = "movie";
     private static final String PARAM_API_KEY = "api_key";
+    //Don't forget to replace your own API Key Here.
     private static final String API_KEY = "";
     private static final String IMAGE_BASE_URL = "http://image.tmdb.org/t/p";
     private static final String IMAGE_SIZE_PATH = "w185";
