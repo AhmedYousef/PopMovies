@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PopMovies</string>
+    <string name="check_connection_message">No internet found. Check your connection or try again.</string>
+    <string name="main_activity_name">Pop Movies</string>
+    <string name="detail_activity_name">Movie Detail</string>
+    <string name="interstellar_plot_synopsis">
+        A team of explorers travel through a wormhole in space in an attempt to ensure humanity\'s survival
+    </string>
+    <string name="original_title">Interstellar</string>
+    <string name="release_date">2014</string>
+    <string name="user_rating">8.6/10</string>
+    <string name="retry_button_name">Retry</string>
+    <string name="error_message">An error has occur. We are working on it. Stay Tuned!</string>
+</resources>

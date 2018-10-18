@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/turquoiseColor">
+
+        <TextView
+            android:id="@+id/tv_original_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/textColorWhite"
+            android:textSize="48sp"
+            tools:text="@string/original_title" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <FrameLayout
+                android:id="@+id/frame_movie_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp">
+
+                <ImageView
+                    android:id="@+id/image_mini_movie_poster"
+                    android:layout_width="210dp"
+                    android:layout_height="290dp"
+                    android:layout_gravity="center"
+                    tools:src="@drawable/interstellar_poster" />
+
+                <ProgressBar
+                    android:id="@+id/pb_loading_indicator"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/tv_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_toEndOf="@id/frame_movie_poster"
+                android:layout_toRightOf="@id/frame_movie_poster"
+                android:textSize="34sp"
+                tools:text="@string/release_date" />
+
+            <TextView
+                android:id="@+id/tv_user_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_release_date"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_toEndOf="@id/frame_movie_poster"
+                android:layout_toRightOf="@id/frame_movie_poster"
+                android:textSize="20sp"
+                tools:text="@string/user_rating" />
+
+            <TextView
+                android:id="@+id/tv_plot_synopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frame_movie_poster"
+                android:layout_marginTop="32dp"
+                android:textSize="16sp"
+                tools:text="@string/interstellar_plot_synopsis" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
