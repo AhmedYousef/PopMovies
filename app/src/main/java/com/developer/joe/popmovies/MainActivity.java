@@ -21,8 +21,8 @@ import android.widget.Toast;
 
 import com.developer.joe.popmovies.adapters.MovieAdapter;
 import com.developer.joe.popmovies.model.Movie;
-import com.developer.joe.popmovies.utilites.JsonUtils;
-import com.developer.joe.popmovies.utilites.NetworkUtils;
+import com.developer.joe.popmovies.utilities.JsonUtils;
+import com.developer.joe.popmovies.utilities.NetworkUtils;
 
 import java.io.IOException;
 import java.net.URL;

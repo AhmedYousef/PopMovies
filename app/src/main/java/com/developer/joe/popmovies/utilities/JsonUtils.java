@@ -1,4 +1,4 @@
-package com.developer.joe.popmovies.utilites;
+package com.developer.joe.popmovies.utilities;
 
 import android.util.Log;
 
