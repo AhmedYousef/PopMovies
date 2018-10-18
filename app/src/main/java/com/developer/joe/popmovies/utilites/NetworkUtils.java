@@ -1,4 +1,4 @@
-package com.developer.joe.popmovies.untilites;
+package com.developer.joe.popmovies.utilites;
 
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
