@@ -11,4 +11,8 @@
     <string name="user_rating">8.6/10</string>
     <string name="retry_button_name">Retry</string>
     <string name="error_message">An error has occur. We are working on it. Stay Tuned!</string>
+    <string name="action_most_popular">Most Popular</string>
+    <string name="action_top_rated">Top Rated</string>
+    <string name="plot_not_found_message">PLOT SYNOPSIS NOT FOUND!</string>
+    <string name="user_rating_not_found_message">USER RATING NOT FOUND!</string>
 </resources>

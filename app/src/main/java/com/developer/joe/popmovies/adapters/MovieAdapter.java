@@ -19,9 +19,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapter
 
     private final static String TAG = MovieAdapter.class.getSimpleName();
 
-    ArrayList<Movie> mMovieList;
-    Context mContext;
-    MovieAdapterOnClickHandler mClickHandler;
+    private ArrayList<Movie> mMovieList;
+    private Context mContext;
+    private MovieAdapterOnClickHandler mClickHandler;
 
     public interface MovieAdapterOnClickHandler {
         void onClick(Movie movie);
@@ -33,10 +33,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieAdapter
     }
 
     public class MovieAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        public final ImageView mMoviePosterImage;
-        public final ImageView mNotFoundImage;
+        private final ImageView mMoviePosterImage;
+        private final ImageView mNotFoundImage;
 
-        public MovieAdapterViewHolder(View itemView) {
+        private MovieAdapterViewHolder(View itemView) {
             super(itemView);
             mMoviePosterImage = itemView.findViewById(R.id.image_movie_poster);
             mNotFoundImage = itemView.findViewById(R.id.image_not_found);

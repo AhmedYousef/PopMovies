@@ -3,7 +3,6 @@ package com.developer.joe.popmovies;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -82,7 +81,7 @@ public class DetailActivity extends AppCompatActivity {
         if (!plotSynopsis.isEmpty()) {
             mPlotSynopsis.setText(movie.getPlotSynopsis());
         } else {
-            mPlotSynopsis.setText("PLOT SYNOPSIS NOT FOUND!");
+            mPlotSynopsis.setText(R.string.plot_not_found_message);
         }
 
         String userRating = movie.getUserRating();
@@ -92,7 +91,7 @@ public class DetailActivity extends AppCompatActivity {
             userRatingSB.append("/10");
             mUserRating.setText(userRatingSB);
         } else {
-            mUserRating.setText("USER RATING NOT FOUND!");
+            mUserRating.setText(R.string.user_rating_not_found_message);
         }
 
         String releaseDate = formatDate(movie.getReleaseDate());

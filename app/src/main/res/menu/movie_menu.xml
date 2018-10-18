@@ -6,12 +6,12 @@
         <item
             android:id="@+id/sort_by_most_popular"
             android:orderInCategory="1"
-            android:title="Most Popular" />
+            android:title="@string/action_most_popular" />
 
         <item
             android:id="@+id/sort_by_top_rated"
             android:orderInCategory="2"
-            android:title="Top Rated" />
+            android:title="@string/action_top_rated" />
 
     </group>
 </menu>
